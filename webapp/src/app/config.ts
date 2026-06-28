@@ -28,7 +28,7 @@ export class Config {
     // This is secure as redirect_uris need to be allowlisted on the OIDC server
     this.oidcRedirectUri = `${window.location.protocol}//${window.location.host}/auth`;
     this.cmsBaseUrl = "https://cms.markdown.ninja";
-    this.githubRepository = "https://github.com/bloom42/markdown-ninja";
+    this.githubRepository = "https://github.com/skerkour/markdown-ninja";
     this.docsUrl = "https://docs.markdown.ninja";
   }
 }

@@ -14,7 +14,7 @@ All the data collected is the data that your enter in the input boxes, there is 
 [Stripe](https://stripe.com) is used for payment processing and storing billing information.
 
 
-Markdown Ninja is 100% Open Source. In case of doubt about the collection and usage of data, feel free to read its source code: [https://github.com/bloom42/markdown-ninja](https://github.com/bloom42/markdown-ninja).
+Markdown Ninja is 100% Open Source. In case of doubt about the collection and usage of data, feel free to read its source code: [https://github.com/skerkour/markdown-ninja](https://github.com/skerkour/markdown-ninja).
 
 ## 1.1 IP logging
 

@@ -15,7 +15,7 @@ permissions:
   contents: read
 
 env:
-  DOCKER_IMAGE: ghcr.io/bloom42/markdown-ninja
+  DOCKER_IMAGE: ghcr.io/skerkour/markdown-ninja
 
 jobs:
   docker_build:

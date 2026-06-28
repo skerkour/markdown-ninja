@@ -33,7 +33,7 @@ Markdown Ninja is an all-in-one platform that takes care of all the technical de
 All of that from the coziness of your favorite editor, whether you prefer to write on an computer, a tablet or even a phone.
 
 
-The best thing, you are asking? [Markdown Ninja is Open Source](https://github.com/bloom42/markdown-ninja). We are huge believer in sustainability, whether it be in our physical or digital world, and Markdown and Open Source are both the best ways to achieve a sustainable web and a sustainable world.
+The best thing, you are asking? [Markdown Ninja is Open Source](https://github.com/skerkour/markdown-ninja). We are huge believer in sustainability, whether it be in our physical or digital world, and Markdown and Open Source are both the best ways to achieve a sustainable web and a sustainable world.
 
 <!-- Fxck Big Tech monopolists. We are tacking back control of our means of sharing ideas and learnings 🏴‍☠️ -->
 

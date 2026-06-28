@@ -72,7 +72,7 @@ This is my first blog post with Markdown Ninja and I really love it!
 Publish with the following command:
 
 ```bash
-$ docker run -i --rm -e MARKDOWN_NINJA_API_KEY=[YOUR_API_KEY] -v `pwd`:/mdninja ghcr.io/bloom42/markdown-ninja publish
+$ docker run -i --rm -e MARKDOWN_NINJA_API_KEY=[YOUR_API_KEY] -v `pwd`:/mdninja ghcr.io/skerkour/markdown-ninja publish
 ```
 
 ## markdown_ninja.yml reference
@@ -113,5 +113,5 @@ jobs:
         # You can choose a working directory with the option below
         # working-directory: website
         run: |
-          docker run -i --rm -e MARKDOWN_NINJA_API_KEY -v `pwd`:/mdninja ghcr.io/bloom42/markdown-ninja publish
+          docker run -i --rm -e MARKDOWN_NINJA_API_KEY -v `pwd`:/mdninja ghcr.io/skerkour/markdown-ninja publish
 ```

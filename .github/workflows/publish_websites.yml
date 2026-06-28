@@ -17,7 +17,7 @@ jobs:
           MARKDOWN_NINJA_API_KEY: ${{ secrets.MARKDOWN_NINJA_API_KEY }}
         working-directory: website
         run: |
-          docker run -i --rm -e MARKDOWN_NINJA_API_KEY -v `pwd`:/mdninja ghcr.io/bloom42/markdown-ninja publish
+          docker run -i --rm -e MARKDOWN_NINJA_API_KEY -v `pwd`:/mdninja ghcr.io/skerkour/markdown-ninja publish
 
   publish_docs:
     runs-on: ubuntu-latest
@@ -29,4 +29,4 @@ jobs:
           MARKDOWN_NINJA_API_KEY: ${{ secrets.MARKDOWN_NINJA_API_KEY }}
         working-directory: docs
         run: |
-          docker run -i --rm -e MARKDOWN_NINJA_API_KEY -v `pwd`:/mdninja ghcr.io/bloom42/markdown-ninja publish
+          docker run -i --rm -e MARKDOWN_NINJA_API_KEY -v `pwd`:/mdninja ghcr.io/skerkour/markdown-ninja publish

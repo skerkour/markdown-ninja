@@ -1,9 +1,9 @@
-VERSION := 0.2.6
+VERSION := 0.2.7
 GO_MODULE = $(shell cat go.mod | grep module | cut -d ' ' -f2)
 DIST_DIR = dist
 
-DOCKER_IMAGE_MDNINJA = ghcr.io/bloom42/markdown-ninja
-DOCKER_IMAGE_MDNINJA_EBOOK = ghcr.io/bloom42/markdown-ninja-ebook
+DOCKER_IMAGE_MDNINJA = ghcr.io/skerkour/markdown-ninja
+DOCKER_IMAGE_MDNINJA_EBOOK = ghcr.io/skerkour/markdown-ninja-ebook
 
 ####################################################################################################
 # Dev
