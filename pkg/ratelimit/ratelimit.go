@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/skerkour/stdx-go/xxh3"
+	"markdown.ninja/stdx/xxh3"
 )
 
 // Limiter tracks request counts within time buckets.

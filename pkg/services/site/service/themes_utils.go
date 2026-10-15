@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/yaml"
 	"github.com/zeebo/blake3"
 	"golang.org/x/net/html"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/yaml"
 	"markdown.ninja/themes"
 )
 

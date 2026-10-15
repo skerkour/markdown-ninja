@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/skerkour/stdx-go/cobra"
 	"markdown.ninja/pkg/buildinfo"
+	"markdown.ninja/stdx/cobra"
 )
 
 var versionOutputFormat string

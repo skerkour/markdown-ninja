@@ -5,11 +5,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/services/emails"
 	"markdown.ninja/pkg/services/organizations"
 	"markdown.ninja/pkg/services/organizations/templates"
+	"markdown.ninja/stdx/queue"
 )
 
 func (service *OrganizationsService) JobSendStaffInvitations(ctx context.Context, input organizations.JobSendStaffInvitations) error {

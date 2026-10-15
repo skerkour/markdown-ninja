@@ -1,0 +1,11 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "files": [
+    {
+      "file": "example_1.0.0_linux_amd64.tar.gz",
+      "sha256": "0a106fbdad6b20119e892ceaccfe903f276f59b608eb57f19616291bb977692c",
+      "signature": "SGVsbG9Xb3JsZA=="
+    }
+  ]
+}

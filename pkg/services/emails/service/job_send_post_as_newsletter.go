@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/queue"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/services/emails"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/queue"
 )
 
 // TODO: handle case where newsletter is created but sending newsletter job fails

@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/services/emails"
+	"markdown.ninja/stdx/guid"
 )
 
 // TODO: increase website's used storage? see also DeleteNewsletter and UpdateNewsletter

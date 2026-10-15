@@ -5,16 +5,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/countries"
-	"github.com/skerkour/stdx-go/crypto"
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
-	"github.com/skerkour/stdx-go/randutil"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/site"
+	"markdown.ninja/stdx/countries"
+	"markdown.ninja/stdx/crypto"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
+	"markdown.ninja/stdx/randutil"
 )
 
 func (service *SiteService) Subscribe(ctx context.Context, input site.SubscribeInput) (ret site.SubscribeOutput, err error) {

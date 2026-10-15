@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *WebsitesService) GetWebsitesForOrganization(ctx context.Context, input websites.GetWebsitesForOrganizationInput) (sites []websites.Website, err error) {

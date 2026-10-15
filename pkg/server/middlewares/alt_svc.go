@@ -3,7 +3,7 @@ package middlewares
 import (
 	"net/http"
 
-	"github.com/skerkour/stdx-go/httpx"
+	"markdown.ninja/stdx/httpx"
 )
 
 func AddAltSvcHeader() func(next http.Handler) http.Handler {

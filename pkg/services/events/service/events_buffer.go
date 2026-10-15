@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/services/events"
+	"markdown.ninja/stdx/db"
 )
 
 const EVENTS_BUFFER_SIZE = 50_000

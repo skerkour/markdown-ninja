@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/emails"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (repo *EmailsRepository) CreateNewsletter(ctx context.Context, db db.Queryer, newsletter emails.Newsletter) (err error) {

@@ -5,9 +5,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/skerkour/stdx-go/retry"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/storage"
+	"markdown.ninja/stdx/retry"
 )
 
 func (service *ContentService) GetAssetData(ctx context.Context, asset content.Asset, options *content.GetAssetDataOptions) (ret io.ReadCloser, err error) {

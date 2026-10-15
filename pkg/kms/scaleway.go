@@ -10,8 +10,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/retry"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/retry"
 )
 
 type ScalewayKms struct {

@@ -3,11 +3,11 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/events"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContactsService) DeleteContact(ctx context.Context, input contacts.DeleteContactInput) (err error) {

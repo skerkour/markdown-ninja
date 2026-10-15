@@ -7,11 +7,6 @@ import (
 
 	"log/slog"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
-	"github.com/skerkour/stdx-go/retry"
 	"github.com/stripe/stripe-go/v81"
 	"github.com/stripe/stripe-go/v81/checkout/session"
 	"markdown.ninja/pkg/errs"
@@ -19,6 +14,11 @@ import (
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/events"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
+	"markdown.ninja/stdx/retry"
 )
 
 func (service *StoreService) CompleteOrder(ctx context.Context, input store.CompleteOrderInput) (err error) {

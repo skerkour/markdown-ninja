@@ -3,13 +3,13 @@ package service
 import (
 	"html/template"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/cmd/mdninja-server/config"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/mailer"
 	"markdown.ninja/pkg/services/kernel/templates"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/queue"
 )
 
 type KernelService struct {

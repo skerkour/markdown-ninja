@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/uuid"
 	"markdown.ninja/pkg/services/kernel"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/uuid"
 )
 
 const (

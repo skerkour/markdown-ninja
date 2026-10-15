@@ -10,17 +10,17 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/memorycache"
-	"github.com/skerkour/stdx-go/sitemap"
-	"github.com/skerkour/stdx-go/timex"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/cachecontrol"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/memorycache"
+	"markdown.ninja/stdx/sitemap"
+	"markdown.ninja/stdx/timex"
 )
 
 // TODO: improve location with site's primary domain

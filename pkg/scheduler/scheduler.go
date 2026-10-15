@@ -5,11 +5,6 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
-	"github.com/skerkour/stdx-go/scheduler"
-	"github.com/skerkour/stdx-go/xxh3"
 	"markdown.ninja/pkg/jwt"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/content"
@@ -17,6 +12,11 @@ import (
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/site"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
+	"markdown.ninja/stdx/scheduler"
+	"markdown.ninja/stdx/xxh3"
 )
 
 type Scheduler struct {

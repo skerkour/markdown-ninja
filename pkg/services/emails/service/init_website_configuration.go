@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/mailer"
 	"markdown.ninja/pkg/services/emails"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *EmailsService) InitWebsiteConfiguration(ctx context.Context, db db.Queryer, websiteID guid.GUID, name string) (configuration emails.WebsiteConfiguration, err error) {

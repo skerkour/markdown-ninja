@@ -3,8 +3,8 @@ package store
 import (
 	"fmt"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/errs"
+	"markdown.ninja/stdx/guid"
 )
 
 var (

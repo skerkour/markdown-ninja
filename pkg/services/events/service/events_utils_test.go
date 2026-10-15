@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/xxh3"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/xxh3"
 )
 
 func BenchmarkGetAnonymousID(b *testing.B) {

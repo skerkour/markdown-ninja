@@ -3,8 +3,8 @@ package service
 import (
 	"fmt"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *StoreService) generateCompleteOrderUrl(domain string, orderID guid.GUID) string {

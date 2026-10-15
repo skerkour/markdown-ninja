@@ -6,9 +6,9 @@ import (
 	"math"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/events"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 // if COUNT(DISTINCT) ever becomes a problem, we can speed it up:

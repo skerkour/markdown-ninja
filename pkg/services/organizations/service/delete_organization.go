@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/db"
 )
 
 func (service *OrganizationsService) DeleteOrganization(ctx context.Context, input organizations.DeleteOrganizationInput) (err error) {

@@ -3,8 +3,6 @@ package service
 import (
 	"html/template"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/cmd/mdninja-server/config"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/mailer"
@@ -15,6 +13,8 @@ import (
 	"markdown.ninja/pkg/services/organizations/templates"
 	"markdown.ninja/pkg/services/store"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/queue"
 )
 
 type OrganizationsService struct {

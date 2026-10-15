@@ -7,8 +7,8 @@ import (
 
 	"log/slog"
 
-	"github.com/skerkour/stdx-go/cobra"
-	"github.com/skerkour/stdx-go/log/slogx"
+	"markdown.ninja/stdx/cobra"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func init() {

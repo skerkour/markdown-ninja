@@ -7,9 +7,9 @@ import (
 	"math"
 	"time"
 
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *ContactsService) ExportContacts(ctx context.Context, input contacts.ExportContactsInput) (ret contacts.ExportContactsOutput, err error) {

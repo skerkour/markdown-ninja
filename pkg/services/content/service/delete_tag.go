@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/db"
 )
 
 func (service *ContentService) DeleteTag(ctx context.Context, input content.DeleteTagInput) (err error) {

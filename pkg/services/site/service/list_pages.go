@@ -8,8 +8,6 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/timex"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/cachecontrol"
@@ -18,6 +16,8 @@ import (
 	"markdown.ninja/pkg/services/events"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/site"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/timex"
 )
 
 func (service *SiteService) ListPages(ctx context.Context, input site.ListPagesInput) (ret kernel.PaginatedResult[site.PageMetadata], err error) {

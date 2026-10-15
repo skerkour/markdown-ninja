@@ -3,11 +3,11 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/uuid"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/uuid"
 )
 
 func (service *OrganizationsService) FindStaffsForOrganization(ctx context.Context, db db.Queryer, organizationID guid.GUID) (staffs []organizations.StaffWithDetails, err error) {

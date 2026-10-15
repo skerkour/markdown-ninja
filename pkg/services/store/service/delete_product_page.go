@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/db"
 )
 
 func (service *StoreService) DeleteProductPage(ctx context.Context, input store.DeleteProductPageInput) (err error) {

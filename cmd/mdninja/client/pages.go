@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/guid"
 )
 
 type localPage struct {

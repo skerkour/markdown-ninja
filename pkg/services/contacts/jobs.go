@@ -1,6 +1,6 @@
 package contacts
 
-import "github.com/skerkour/stdx-go/guid"
+import "markdown.ninja/stdx/guid"
 
 type JobDeleteOldUnverifiedContacts struct {
 }

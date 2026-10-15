@@ -3,9 +3,9 @@ package contacts
 import (
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/guid"
 )
 
 // const (

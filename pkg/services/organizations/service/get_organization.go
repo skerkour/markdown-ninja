@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *OrganizationsService) GetOrganization(ctx context.Context, input organizations.GetOrganizationInput) (org organizations.Organization, err error) {

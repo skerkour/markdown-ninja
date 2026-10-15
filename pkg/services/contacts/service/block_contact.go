@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/db"
 )
 
 func (service *ContactsService) BlockContact(ctx context.Context, input contacts.BlockContactInput) (contact contacts.Contact, err error) {

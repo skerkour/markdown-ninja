@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/skerkour/stdx-go/uuid"
+	"markdown.ninja/stdx/uuid"
 )
 
 type requestIDContextKey struct{}

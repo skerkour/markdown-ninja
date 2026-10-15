@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/emails"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *EmailsService) VerifyDnsConfiguration(ctx context.Context, input emails.VerifyDnsConfigurationInput) (configuration emails.WebsiteConfiguration, err error) {

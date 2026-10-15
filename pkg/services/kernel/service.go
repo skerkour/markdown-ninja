@@ -3,9 +3,9 @@ package kernel
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/queue"
-	"github.com/skerkour/stdx-go/uuid"
 	"markdown.ninja/pingoo-go"
+	"markdown.ninja/stdx/queue"
+	"markdown.ninja/stdx/uuid"
 )
 
 type Service interface {

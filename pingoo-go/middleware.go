@@ -12,8 +12,8 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/skerkour/stdx-go/httpx"
 	"markdown.ninja/pingoo-go/rules"
+	"markdown.ninja/stdx/httpx"
 )
 
 type MiddlewareConfig struct {

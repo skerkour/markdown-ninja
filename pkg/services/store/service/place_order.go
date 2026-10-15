@@ -6,10 +6,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/slicesx"
 	"github.com/stripe/stripe-go/v81"
 	"github.com/stripe/stripe-go/v81/checkout/session"
 	stripecustomer "github.com/stripe/stripe-go/v81/customer"
@@ -19,6 +15,10 @@ import (
 	"markdown.ninja/pkg/services/events"
 	"markdown.ninja/pkg/services/store"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/slicesx"
 )
 
 func (service *StoreService) PlaceOrder(ctx context.Context, input store.PlaceOrderInput) (output store.PlaceOrderOutput, err error) {

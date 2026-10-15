@@ -5,12 +5,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/countries"
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/countries"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
 )
 
 func (service *ContactsService) UpdateContact(ctx context.Context, input contacts.UpdateContactInput) (contact contacts.Contact, err error) {

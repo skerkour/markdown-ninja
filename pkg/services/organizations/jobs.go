@@ -1,6 +1,6 @@
 package organizations
 
-import "github.com/skerkour/stdx-go/guid"
+import "markdown.ninja/stdx/guid"
 
 type JobSendStaffInvitations struct {
 	InvitationIDs []guid.GUID `json:"invitation_ids"`

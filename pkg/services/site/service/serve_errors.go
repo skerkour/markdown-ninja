@@ -8,12 +8,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/server/cachecontrol"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *SiteService) serveSiteNotFoundError(ctx context.Context, res http.ResponseWriter) {

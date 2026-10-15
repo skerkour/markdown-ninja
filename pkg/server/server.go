@@ -20,10 +20,6 @@ import (
 
 	"github.com/quic-go/quic-go"
 	"github.com/quic-go/quic-go/http3"
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/proxyproto"
 	"github.com/zeebo/blake3"
 	"golang.org/x/crypto/acme/autocert"
 	"golang.org/x/net/http2"
@@ -42,6 +38,10 @@ import (
 	"markdown.ninja/pkg/services/site"
 	"markdown.ninja/pkg/services/store"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/proxyproto"
 	"markdown.ninja/webapp"
 )
 

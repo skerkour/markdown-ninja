@@ -10,11 +10,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/log/slogx"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/kernel"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 type webappIndexHtmlTemplateData struct {

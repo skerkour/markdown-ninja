@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/crypto"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/crypto"
 )
 
 func (service *OrganizationsService) DeleteStaffInvitation(ctx context.Context, input organizations.DeleteStaffInvitationInput) (err error) {

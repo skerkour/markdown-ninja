@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/uuid"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/uuid"
 )
 
 func (service *WebsitesService) CheckUserIsStaff(ctx context.Context, db db.Queryer, userID uuid.UUID, websiteID guid.GUID) (err error) {

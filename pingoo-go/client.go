@@ -16,11 +16,11 @@ import (
 	"time"
 
 	"github.com/klauspost/compress/zstd"
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/retry"
-	"github.com/skerkour/stdx-go/uuid"
 	"github.com/tetratelabs/wazero"
 	"markdown.ninja/pingoo-go/wasm"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/retry"
+	"markdown.ninja/stdx/uuid"
 )
 
 const userAgent = "Pingoo/GoSDK (https://pingoo.io)"

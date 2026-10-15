@@ -1,6 +1,6 @@
 FROM node:slim as node
 
-FROM golang:1.26 AS go
+FROM golang:1.27 AS go
 
 FROM debian:13
 
@@ -18,7 +18,6 @@ RUN apt-get install -y --no-install-recommends \
     #  g++ musl musl-dev musl-tools clang libclang-dev lld cmake \
     # useful data. mailcap for mimetypes. tzdata for timezones.
     mailcap tzdata libpcre2-dev \
-    python3 python3-pip pipx \
     # mdninja-server specific dependencies
     postgresql-client-17 libimage-exiftool-perl graphviz
 

@@ -3,12 +3,12 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/uuid"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/uuid"
 )
 
 func (service *OrganizationsService) CheckUserIsStaff(ctx context.Context, db db.Queryer, userID uuid.UUID, organizationID guid.GUID) (staff organizations.Staff, err error) {

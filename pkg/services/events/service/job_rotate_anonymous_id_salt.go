@@ -5,9 +5,9 @@ import (
 	"crypto/rand"
 	"encoding/base64"
 
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/services/events"
 	"markdown.ninja/pkg/settings"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *Service) JobRotateAnonymousIDSalt(ctx context.Context, input events.JobRotateAnonymousIDSalt) error {

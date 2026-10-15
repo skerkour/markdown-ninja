@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/timex"
 	"markdown.ninja/pkg/services/kernel"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/timex"
 )
 
 // TODO: improve the allowed max sizes

@@ -7,8 +7,8 @@ import (
 	"log/slog"
 
 	"github.com/fxamacker/cbor/v2"
-	"github.com/skerkour/stdx-go/log/slogx"
 	wazeroapi "github.com/tetratelabs/wazero/api"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 type ModuleCtxKeyType struct{}

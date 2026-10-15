@@ -1,6 +1,6 @@
 package store
 
-import "github.com/skerkour/stdx-go/guid"
+import "markdown.ninja/stdx/guid"
 
 type JobSendOrderConfirmationEmail struct {
 	OrderID guid.GUID `json:"order_id"`

@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"log/slog"
 
-	"github.com/skerkour/stdx-go/log/loki"
 	"markdown.ninja/cmd/mdninja-server/config"
 	"markdown.ninja/pkg/buildinfo"
 	"markdown.ninja/pkg/kms"
@@ -14,6 +13,7 @@ import (
 	"markdown.ninja/pkg/mailer/console"
 	"markdown.ninja/pkg/mailer/ses"
 	"markdown.ninja/pkg/storage/s3"
+	"markdown.ninja/stdx/log/loki"
 )
 
 func newLogger(ctx context.Context) (*slog.Logger, *slog.LevelVar, *loki.Writer) {

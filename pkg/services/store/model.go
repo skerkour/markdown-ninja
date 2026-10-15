@@ -7,11 +7,11 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/set"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/set"
 )
 
 const (

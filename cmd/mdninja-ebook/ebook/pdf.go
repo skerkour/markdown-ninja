@@ -11,7 +11,7 @@ import (
 	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
 	pdfcpumodel "github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
 	pdfcputypes "github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
-	"github.com/skerkour/stdx-go/filex"
+	"markdown.ninja/stdx/filex"
 )
 
 func ebookToPdf(ctx context.Context, config Config, pandocFiles pandocFiles, distPath, coverPath string) (err error) {
@@ -111,7 +111,7 @@ func ConvertCoverToPdf(ctx context.Context, destPath, sourcePath string) (err er
 	// 	return
 	// }
 	// pdfcpu import cover.pdf cover.png
-	err = pdfcpuapi.ImportImagesFile([]string{sourcePath}, destPath, nil, nil)
+	err = pdfcpuapi.ImportImagesFile(ctx, []string{sourcePath}, destPath, nil, nil)
 	if err != nil {
 		err = fmt.Errorf("converting cover to PDF: %w", err)
 		return
@@ -136,7 +136,7 @@ func ConvertCoverToPdf(ctx context.Context, destPath, sourcePath string) (err er
 		return
 	}
 
-	err = pdfcpuapi.ResizeFile(destPath, destPath, nil, resizeOpts, nil)
+	err = pdfcpuapi.ResizeFile(ctx, destPath, destPath, nil, resizeOpts, nil)
 	if err != nil {
 		err = fmt.Errorf("error resizing cover: %w", err)
 		return
@@ -188,7 +188,7 @@ func MergePdfs(ctx context.Context, destPath, coverPath, contentPath string) (er
 	// }
 
 	mergeConf := pdfcpumodel.NewDefaultConfiguration()
-	err = pdfcpuapi.MergeCreateFile([]string{coverPath, contentPath}, destPath, false, mergeConf)
+	err = pdfcpuapi.MergeCreateFile(ctx, []string{coverPath, contentPath}, destPath, false, mergeConf)
 	if err != nil {
 		err = fmt.Errorf("error merging cover and content: %w", err)
 		return

@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *OrganizationsService) CheckBillingGatedAction(ctx context.Context, db db.Queryer, organizationID guid.GUID, action organizations.BillingGatedAction) (err error) {

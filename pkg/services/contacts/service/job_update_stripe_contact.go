@@ -4,11 +4,11 @@ import (
 	"context"
 	"log/slog"
 
-	"github.com/skerkour/stdx-go/log/slogx"
 	"github.com/stripe/stripe-go/v81"
 	stripecustomer "github.com/stripe/stripe-go/v81/customer"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *ContactsService) JobUpdateStripeContact(ctx context.Context, data contacts.JobUpdateStripeContact) (err error) {

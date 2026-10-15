@@ -4,9 +4,9 @@ import (
 	"context"
 	"unicode/utf8"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContentService) FindPublishedPagesMetadata(ctx context.Context, db db.Queryer, websiteID guid.GUID, pageTypes []content.PageType, limit int64) (pages []content.PageMetadata, err error) {

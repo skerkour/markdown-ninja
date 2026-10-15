@@ -5,8 +5,6 @@ import (
 	"errors"
 	"log/slog"
 
-	"github.com/skerkour/stdx-go/queue"
-	"github.com/skerkour/stdx-go/workerpool"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/emails"
@@ -16,6 +14,8 @@ import (
 	"markdown.ninja/pkg/services/site"
 	"markdown.ninja/pkg/services/store"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/queue"
+	"markdown.ninja/stdx/workerpool"
 )
 
 func Start(ctx context.Context, logger *slog.Logger, concurrencyMax uint32, queuee queue.Queue, kernelService kernel.PrivateService,

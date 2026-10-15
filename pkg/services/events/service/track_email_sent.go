@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/services/events"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *Service) TrackEmailSent(ctx context.Context, input events.TrackEmailSentInput) {

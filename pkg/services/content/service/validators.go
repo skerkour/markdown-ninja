@@ -6,11 +6,11 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/skerkour/stdx-go/languages"
-	"github.com/skerkour/stdx-go/stringsx"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/languages"
+	"markdown.ninja/stdx/stringsx"
 )
 
 var allowedSpecialCharactersForAssetFilename = "._-()[]"

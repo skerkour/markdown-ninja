@@ -14,11 +14,6 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/skerkour/stdx-go/cobra"
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/migrate"
-	"github.com/skerkour/stdx-go/queue/postgres"
 	"github.com/stripe/stripe-go/v81"
 	"markdown.ninja/cmd/mdninja-server/config"
 	"markdown.ninja/migrations"
@@ -37,6 +32,11 @@ import (
 	store "markdown.ninja/pkg/services/store/service"
 	websites "markdown.ninja/pkg/services/websites/service"
 	"markdown.ninja/pkg/worker"
+	"markdown.ninja/stdx/cobra"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/migrate"
+	"markdown.ninja/stdx/queue/postgres"
 )
 
 var flagServerConfigPath string

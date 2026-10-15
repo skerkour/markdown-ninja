@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContactsService) FindContactByEmail(ctx context.Context, db db.Queryer, websiteID guid.GUID, email string) (contact contacts.Contact, err error) {

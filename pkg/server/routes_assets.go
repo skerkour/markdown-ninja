@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/server/apiutil"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/guid"
 )
 
 func (server *server) uploadAsset(w http.ResponseWriter, req *http.Request) {

@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContentService) CreateTag(ctx context.Context, input content.CreateTagInput) (tag content.Tag, err error) {

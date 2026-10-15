@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/queue"
 )
 
 func (service *OrganizationsService) JobDispatchInvoiceMonthlyUsage(ctx context.Context, _ organizations.JobDispatchInvoiceMonthlyUsage) error {

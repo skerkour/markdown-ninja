@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/retry"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/retry"
 )
 
 func (service *ContentService) JobDeleteAssetData(ctx context.Context, input content.JobDeleteAssetData) (err error) {

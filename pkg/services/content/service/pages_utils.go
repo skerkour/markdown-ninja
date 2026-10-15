@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContentService) getDescriptionFromContentHtml(ctx context.Context, db db.DB, websiteID guid.GUID, contentHtml string) (description string, err error) {

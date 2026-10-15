@@ -7,11 +7,11 @@ import (
 	"slices"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/iterx"
 	"markdown.ninja/pkg/dbx"
 	"markdown.ninja/pkg/services/events"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/iterx"
 )
 
 // https://www.timescale.com/blog/boosting-postgres-insert-performance/

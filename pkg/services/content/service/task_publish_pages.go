@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
 )
 
 func (service *ContentService) TaskPublishPages(ctx context.Context) {

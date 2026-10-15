@@ -10,12 +10,12 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/skerkour/stdx-go/retry"
 	"github.com/tetratelabs/wazero"
 	wazeroapi "github.com/tetratelabs/wazero/api"
 	"github.com/tetratelabs/wazero/experimental"
 	"github.com/tetratelabs/wazero/imports/wasi_snapshot_preview1"
 	"markdown.ninja/pingoo-go/wasm"
+	"markdown.ninja/stdx/retry"
 )
 
 // callWasmGuestFunction calls the given WASM function using JSON to serialize/deserialize input/output

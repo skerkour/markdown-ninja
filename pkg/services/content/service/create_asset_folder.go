@@ -6,12 +6,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContentService) CreateAssetFolder(ctx context.Context, input content.CreateAssetFolderInput) (folder content.Asset, err error) {

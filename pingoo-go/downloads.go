@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/skerkour/stdx-go/httpx"
+	"markdown.ninja/stdx/httpx"
 )
 
 type DownloadOutput struct {

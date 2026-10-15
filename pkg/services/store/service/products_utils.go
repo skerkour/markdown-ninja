@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/db"
 )
 
 func (service *StoreService) hydrateProduct(ctx context.Context, db db.Queryer, product *store.Product) (err error) {

@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/db"
 )
 
 func (service *OrganizationsService) GetBillingUsage(ctx context.Context, input organizations.GetBillingUsageInput) (usage organizations.BillingUsage, err error) {

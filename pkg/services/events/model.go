@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
+	"markdown.ninja/stdx/guid"
 )
 
 type Browser int32

@@ -3,10 +3,10 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/crypto"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/kernel"
+	"markdown.ninja/stdx/crypto"
 )
 
 func (service *ContactsService) VerifySessionToken(ctx context.Context, tokenStr string) (contactAndSession contacts.ContactAndSession, err error) {

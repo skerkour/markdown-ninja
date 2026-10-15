@@ -1,6 +1,6 @@
 package site
 
-import "github.com/skerkour/stdx-go/guid"
+import "markdown.ninja/stdx/guid"
 
 type JobSendLoginEmail struct {
 	ContactID     guid.GUID `json:"contact_id"`

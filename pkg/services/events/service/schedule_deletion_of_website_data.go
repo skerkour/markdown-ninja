@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/services/events"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/queue"
 )
 
 func (service *Service) ScheduleDeletionOfWebsiteData(ctx context.Context, tx db.Queryer, websiteID guid.GUID) (err error) {

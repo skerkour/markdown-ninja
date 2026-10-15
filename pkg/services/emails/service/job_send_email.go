@@ -6,9 +6,9 @@ import (
 	"net/mail"
 	"strings"
 
-	"github.com/skerkour/stdx-go/email"
 	"markdown.ninja/pkg/services/emails"
 	"markdown.ninja/pkg/services/events"
+	"markdown.ninja/stdx/email"
 )
 
 func (service *EmailsService) JobSendEmail(ctx context.Context, input emails.JobSendEmail) error {

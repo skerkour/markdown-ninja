@@ -3,12 +3,12 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
 )
 
 func (service *ContentService) DeleteWebsiteData(ctx context.Context, tx db.Queryer, websiteID guid.GUID) (err error) {

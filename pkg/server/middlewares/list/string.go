@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/skerkour/stdx-go/set"
+	"markdown.ninja/stdx/set"
 )
 
 type StringList []string

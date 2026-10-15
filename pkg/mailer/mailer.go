@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/skerkour/stdx-go/email"
+	"markdown.ninja/stdx/email"
 )
 
 type Mailer interface {

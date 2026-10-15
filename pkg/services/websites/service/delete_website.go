@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/db"
 )
 
 func (service *WebsitesService) DeleteWebsite(ctx context.Context, input websites.DeleteWebsiteInput) (err error) {

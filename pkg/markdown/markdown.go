@@ -3,11 +3,11 @@ package markdown
 import (
 	"bytes"
 
-	highlighting "github.com/skerkour/stdx-go/goldmark-highlighting"
 	"github.com/yuin/goldmark"
 	"github.com/yuin/goldmark/extension"
 	"github.com/yuin/goldmark/parser"
 	htmlrenderer "github.com/yuin/goldmark/renderer/html"
+	highlighting "markdown.ninja/stdx/goldmark-highlighting"
 )
 
 func newMarkdownRenderer(extenders ...goldmark.Extender) goldmark.Markdown {

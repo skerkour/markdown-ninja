@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (repo *ContentRepository) CreatePage(ctx context.Context, db db.Queryer, page content.Page) (err error) {

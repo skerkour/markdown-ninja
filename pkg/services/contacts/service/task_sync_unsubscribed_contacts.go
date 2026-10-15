@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
 )
 
 func (service *ContactsService) TaskSyncUnsubscribedContacts(ctx context.Context) {

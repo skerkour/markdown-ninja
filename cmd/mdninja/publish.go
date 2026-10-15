@@ -3,10 +3,10 @@ package main
 import (
 	"os"
 
-	"github.com/skerkour/stdx-go/cobra"
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/cmd/mdninja/client"
 	"markdown.ninja/pkg/errs"
+	"markdown.ninja/stdx/cobra"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 var flagPublishSync bool

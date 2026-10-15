@@ -6,9 +6,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/skerkour/stdx-go/orderedmap"
-	"github.com/skerkour/stdx-go/yaml"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/orderedmap"
+	"markdown.ninja/stdx/yaml"
 )
 
 type config struct {

@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/db"
 )
 
 func (service *WebsitesService) RemoveDomain(ctx context.Context, input websites.RemoveDomainInput) (err error) {

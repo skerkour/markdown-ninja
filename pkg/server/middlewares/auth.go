@@ -5,7 +5,6 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/skerkour/stdx-go/set"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/apiutil"
@@ -14,6 +13,7 @@ import (
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/set"
 )
 
 type authMiddleware struct {

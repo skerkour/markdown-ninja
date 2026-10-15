@@ -4,7 +4,7 @@ import (
 	"embed"
 	"io/fs"
 
-	"github.com/skerkour/stdx-go/set"
+	"markdown.ninja/stdx/set"
 )
 
 //go:embed */dist/*

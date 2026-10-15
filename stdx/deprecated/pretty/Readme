@@ -1,0 +1,9 @@
+package pretty
+
+    import "markdown.ninja/stdx/deprecated/pretty"
+
+    Package pretty provides pretty-printing for Go values.
+
+Documentation
+
+    http://godoc.org/github.com/skerkour/stdx-go/deprecated/pretty

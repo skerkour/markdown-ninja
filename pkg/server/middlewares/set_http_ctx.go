@@ -8,12 +8,12 @@ import (
 	"net/netip"
 	"strings"
 
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/uuid"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/server/apiutil"
 	"markdown.ninja/pkg/server/httpctx"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/uuid"
 )
 
 // type gizmoClientMetadataHeader struct {

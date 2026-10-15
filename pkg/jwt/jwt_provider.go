@@ -13,11 +13,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/memorycache"
-	"github.com/skerkour/stdx-go/uuid"
 	"markdown.ninja/pkg/kms"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/memorycache"
+	"markdown.ninja/stdx/uuid"
 )
 
 type Provider struct {

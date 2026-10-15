@@ -10,8 +10,8 @@ import (
 	"hash"
 	"time"
 
-	"github.com/skerkour/stdx-go/uuid"
 	"markdown.ninja/pkg/kms"
+	"markdown.ninja/stdx/uuid"
 )
 
 // A JWT key as stored in DB

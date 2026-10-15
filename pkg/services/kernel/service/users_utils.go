@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/uuid"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/kernel"
+	"markdown.ninja/stdx/uuid"
 )
 
 func (service *KernelService) CurrentUserID(ctx context.Context) (userID uuid.UUID, err error) {

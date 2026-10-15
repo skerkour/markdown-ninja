@@ -5,12 +5,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/markdown"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *StoreService) CreateProductPage(ctx context.Context, input store.CreateProductPageInput) (page store.ProductPage, err error) {

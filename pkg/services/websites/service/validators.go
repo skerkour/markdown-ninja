@@ -5,10 +5,10 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/skerkour/stdx-go/stringsx"
-	"github.com/skerkour/stdx-go/validate"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/stringsx"
+	"markdown.ninja/stdx/validate"
 	"markdown.ninja/themes"
 )
 

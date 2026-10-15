@@ -6,14 +6,14 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/log/slogx"
 	"github.com/stripe/stripe-go/v81"
 	"github.com/stripe/stripe-go/v81/customer"
 	"github.com/stripe/stripe-go/v81/paymentmethod"
 	"github.com/stripe/stripe-go/v81/taxid"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *OrganizationsService) getStripeCheckoutSessionLineItemsForPlan(planID kernel.PlanID, extraSlots int64) (lineItems []*stripe.CheckoutSessionLineItemParams, err error) {

@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/kernel"
+	"markdown.ninja/stdx/queue"
 )
 
 func (service *KernelService) DeleteBackgroundJob(ctx context.Context, input kernel.DeleteBackgroundJobInput) (err error) {

@@ -10,14 +10,14 @@ import (
 	"github.com/go-chi/chi/v5"
 	chimiddleware "github.com/go-chi/chi/v5/middleware"
 	"github.com/klauspost/compress/zstd"
-	"github.com/skerkour/stdx-go/httpx/hostrouter"
-	"github.com/skerkour/stdx-go/httpx/middlewarex"
 	"markdown.ninja/pingoo-go"
 	pingoomiddleware "markdown.ninja/pingoo-go/middleware"
 	"markdown.ninja/pingoo-go/rules"
 	"markdown.ninja/pkg/server/apiutil"
 	"markdown.ninja/pkg/server/middlewares"
 	"markdown.ninja/pkg/server/website"
+	"markdown.ninja/stdx/httpx/hostrouter"
+	"markdown.ninja/stdx/httpx/middlewarex"
 )
 
 func (server *server) routes(ctx context.Context) (rootRouter chi.Router, err error) {

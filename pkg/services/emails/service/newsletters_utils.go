@@ -3,8 +3,8 @@ package service
 import (
 	"fmt"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/emails"
+	"markdown.ninja/stdx/guid"
 )
 
 func convertNewsletterMetadata(input []emails.Newsletter) (output []emails.NewsletterMetadata) {

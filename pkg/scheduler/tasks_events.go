@@ -3,9 +3,9 @@ package scheduler
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/services/events"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
 )
 
 func (scheduler *Scheduler) eventsDispatchRotateAnonymousIDSalt(ctx context.Context) {

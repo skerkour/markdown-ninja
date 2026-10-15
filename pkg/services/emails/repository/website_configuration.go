@@ -5,9 +5,9 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/emails"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (repo *EmailsRepository) CreateWebsiteConfiguration(ctx context.Context, db db.Queryer, config emails.WebsiteConfiguration) (err error) {

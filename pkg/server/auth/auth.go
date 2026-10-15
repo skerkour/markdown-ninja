@@ -2,8 +2,8 @@ package auth
 
 import (
 	"github.com/fxamacker/cbor/v2"
-	"github.com/skerkour/stdx-go/uuid"
 	"markdown.ninja/pkg/jwt"
+	"markdown.ninja/stdx/uuid"
 )
 
 type AccessToken struct {

@@ -6,8 +6,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"github.com/stripe/stripe-go/v81"
 	"github.com/stripe/stripe-go/v81/checkout/session"
 	stripecustomer "github.com/stripe/stripe-go/v81/customer"
@@ -15,6 +13,8 @@ import (
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *OrganizationsService) CreateOrganization(ctx context.Context, input organizations.CreateOrganizationInput) (ret organizations.CreateOrganizationOutput, err error) {

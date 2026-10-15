@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/skerkour/stdx-go/uuid"
+	"markdown.ninja/stdx/uuid"
 )
 
 func (client *Client) ListUsers(ctx context.Context, input ListUsersInput) (res PaginatedResult[User], err error) {

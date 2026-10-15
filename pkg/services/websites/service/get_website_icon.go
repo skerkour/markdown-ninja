@@ -5,11 +5,11 @@ import (
 	"io"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/retry"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/websites"
 	"markdown.ninja/pkg/storage"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/retry"
 )
 
 func (service *WebsitesService) GetWebsiteIcon(ctx context.Context, websiteID guid.GUID, size int) (icon io.ReadCloser, err error) {

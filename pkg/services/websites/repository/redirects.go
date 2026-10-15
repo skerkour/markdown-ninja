@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (repo *WebsitesRepository) CreateRedirect(ctx context.Context, db db.Queryer, redirect websites.Redirect) (err error) {

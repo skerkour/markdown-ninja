@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/skerkour/stdx-go/uuid"
+	"markdown.ninja/stdx/uuid"
 )
 
 const (

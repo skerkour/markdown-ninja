@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/countries"
-	"github.com/skerkour/stdx-go/retry"
 	"markdown.ninja/pingoo-go/wasm"
+	"markdown.ninja/stdx/countries"
+	"markdown.ninja/stdx/retry"
 )
 
 type GeoipRecord struct {

@@ -5,10 +5,10 @@ import (
 	"io"
 	"os"
 
-	"github.com/skerkour/stdx-go/cobra"
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/cmd/mdninja-server/config"
+	"markdown.ninja/stdx/cobra"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 var healthcheckCmd = &cobra.Command{

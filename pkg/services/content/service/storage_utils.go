@@ -3,8 +3,8 @@ package service
 import (
 	"path/filepath"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContentService) getStoragePrefixForWebsite(websiteID guid.GUID) (prefix string) {

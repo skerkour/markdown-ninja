@@ -6,11 +6,11 @@ import (
 	"net/netip"
 	"net/url"
 
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/uuid"
 	"markdown.ninja/pkg/server/auth"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/uuid"
 )
 
 // Context is used to carry data during the lifecycle of a request

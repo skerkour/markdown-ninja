@@ -6,12 +6,12 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
-	"github.com/skerkour/stdx-go/httpx/cors"
 	"markdown.ninja/pkg/server/apiutil"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/site"
 	"markdown.ninja/pkg/services/store"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/httpx/cors"
 )
 
 func Routes(ctx context.Context, siteService site.Service, contactsService contacts.Service, storeService store.Service) (router chi.Router) {

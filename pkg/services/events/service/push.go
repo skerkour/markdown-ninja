@@ -4,8 +4,8 @@ import (
 	"context"
 	"log/slog"
 
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/services/events"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *Service) Push(ctx context.Context, event events.Event) {

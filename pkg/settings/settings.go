@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/dbx"
+	"markdown.ninja/stdx/db"
 )
 
 var (

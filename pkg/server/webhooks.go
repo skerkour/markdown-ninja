@@ -8,12 +8,12 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/skerkour/stdx-go/crypto"
-	"github.com/skerkour/stdx-go/log/slogx"
 	"github.com/stripe/stripe-go/v81/webhook"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/apiutil"
+	"markdown.ninja/stdx/crypto"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (server *server) stripeWebhook(res http.ResponseWriter, req *http.Request) {

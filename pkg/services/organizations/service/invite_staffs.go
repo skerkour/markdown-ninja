@@ -7,15 +7,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/iterx"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
-	"github.com/skerkour/stdx-go/slicesx"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/iterx"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
+	"markdown.ninja/stdx/slicesx"
 )
 
 func (service *OrganizationsService) InviteStaffs(ctx context.Context, input organizations.InviteStaffsInput) (invitations []organizations.StaffInvitation, err error) {

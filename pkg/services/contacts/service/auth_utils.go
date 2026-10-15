@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/jwt"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/guid"
 )
 
 const (

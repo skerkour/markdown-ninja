@@ -13,8 +13,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/credentials"
 	"github.com/aws/aws-sdk-go-v2/service/sesv2"
 	"github.com/aws/aws-sdk-go-v2/service/sesv2/types"
-	"github.com/skerkour/stdx-go/email"
 	"markdown.ninja/pkg/mailer"
+	"markdown.ninja/stdx/email"
 )
 
 // SesMailer implements the `Mailer` interface to send emails using AWS' SES

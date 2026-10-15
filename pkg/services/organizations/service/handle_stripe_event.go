@@ -7,12 +7,12 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/retry"
 	"github.com/stripe/stripe-go/v81"
 	stripecustomer "github.com/stripe/stripe-go/v81/customer"
 	"github.com/stripe/stripe-go/v81/paymentintent"
 	"markdown.ninja/pkg/errs"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/retry"
 )
 
 func (service *OrganizationsService) HandleStripeEvent(ctx context.Context, stripeEvent stripe.Event) error {

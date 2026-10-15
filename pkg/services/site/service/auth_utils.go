@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *SiteService) contactSession(ctx context.Context) (session *contacts.Session) {

@@ -8,11 +8,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/cachecontrol"
 	"markdown.ninja/pkg/server/httpctx"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 const MaxBodySize int64 = 300_000

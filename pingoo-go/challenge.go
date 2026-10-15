@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"net/netip"
 
-	"github.com/skerkour/stdx-go/uuid"
+	"markdown.ninja/stdx/uuid"
 )
 
 type challengeInitInput struct {

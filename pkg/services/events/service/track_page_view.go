@@ -5,9 +5,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/events"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *Service) TrackPageView(ctx context.Context, input events.TrackPageViewInput) {

@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/skerkour/stdx-go/email"
 	"markdown.ninja/pkg/mailer"
+	"markdown.ninja/stdx/email"
 )
 
 // consoleMailer implements the `Mailer` interface to print emails to console

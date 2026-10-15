@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (repo *ContactsRepository) CreateSession(ctx context.Context, db db.Queryer, session contacts.Session) (err error) {

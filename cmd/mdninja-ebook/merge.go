@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/skerkour/stdx-go/cobra"
 	"markdown.ninja/cmd/mdninja-ebook/ebook"
+	"markdown.ninja/stdx/cobra"
 )
 
 var mergeCmd = &cobra.Command{

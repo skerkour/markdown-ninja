@@ -4,8 +4,8 @@ import (
 	"context"
 	"path/filepath"
 
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *ContentService) GetAsset(ctx context.Context, input content.GetAssetInput) (asset content.Asset, err error) {

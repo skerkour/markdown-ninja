@@ -5,12 +5,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/countries"
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/countries"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContactsService) CreateContact(ctx context.Context, input contacts.CreateContactInput) (contact contacts.Contact, err error) {

@@ -5,14 +5,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContentService) CreateSnippet(ctx context.Context, input content.CreateSnippetInput) (snippet content.Snippet, err error) {

@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"golang.org/x/exp/slices"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *StoreService) ReorderProductPages(ctx context.Context, input store.ReorderProductPagesInput) (err error) {

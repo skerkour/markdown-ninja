@@ -1,6 +1,6 @@
 package events
 
-import "github.com/skerkour/stdx-go/guid"
+import "markdown.ninja/stdx/guid"
 
 type JobDeleteWebsiteEvents struct {
 	WebsiteID guid.GUID `json:"website_id"`

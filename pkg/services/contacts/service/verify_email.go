@@ -4,9 +4,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/crypto"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/kernel"
+	"markdown.ninja/stdx/crypto"
 )
 
 func (service *ContactsService) VerifyEmail(ctx context.Context, input contacts.VerifyEmailInput) (err error) {

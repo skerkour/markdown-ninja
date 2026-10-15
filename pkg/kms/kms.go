@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/fxamacker/cbor/v2"
-	"github.com/skerkour/stdx-go/memorycache"
-	"github.com/skerkour/stdx-go/uuid"
 	"golang.org/x/crypto/chacha20poly1305"
+	"markdown.ninja/stdx/memorycache"
+	"markdown.ninja/stdx/uuid"
 )
 
 type Provider string

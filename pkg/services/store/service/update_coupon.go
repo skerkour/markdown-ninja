@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/db"
 )
 
 func (service *StoreService) UpdateCoupon(ctx context.Context, input store.UpdateCouponInput) (coupon store.Coupon, err error) {

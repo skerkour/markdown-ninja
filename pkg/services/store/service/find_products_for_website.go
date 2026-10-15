@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *StoreService) FindProductsForWebsite(ctx context.Context, db db.Queryer, websiteID guid.GUID, limit int64) (products []store.Product, err error) {

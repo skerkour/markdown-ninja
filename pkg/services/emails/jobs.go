@@ -3,7 +3,7 @@ package emails
 import (
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
+	"markdown.ninja/stdx/guid"
 )
 
 type JobDeleteWebsiteConfigurationData struct {

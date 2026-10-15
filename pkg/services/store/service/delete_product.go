@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/db"
 )
 
 // TODO: cleanup automatically instad of checking for number of assets, book versions...

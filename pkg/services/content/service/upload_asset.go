@@ -10,7 +10,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/httpctx"
@@ -20,6 +19,7 @@ import (
 	"markdown.ninja/pkg/services/store"
 	"markdown.ninja/pkg/services/websites"
 	"markdown.ninja/pkg/storage"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContentService) UploadAsset(ctx context.Context, input content.UploadAssetInput, bypassAuthCheck bool) (asset content.Asset, err error) {

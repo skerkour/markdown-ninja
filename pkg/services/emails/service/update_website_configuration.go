@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/mailer"
 	"markdown.ninja/pkg/services/emails"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *EmailsService) UpdateWebsiteConfiguration(ctx context.Context, input emails.UpdateWebsiteConfigurationInput) (configuration emails.WebsiteConfiguration, err error) {

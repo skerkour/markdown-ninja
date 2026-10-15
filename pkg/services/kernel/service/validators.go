@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/retry"
-	"github.com/skerkour/stdx-go/stringsx"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/kernel"
+	"markdown.ninja/stdx/retry"
+	"markdown.ninja/stdx/stringsx"
 )
 
 // var paletteColorRegexp = regexp.MustCompile("var\\(--test-palette-[1-8]\\)")

@@ -7,14 +7,14 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/countries"
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/iterx"
-	"github.com/skerkour/stdx-go/slicesx"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/countries"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/iterx"
+	"markdown.ninja/stdx/slicesx"
 )
 
 func (service *StoreService) GiveContactsAccessToProduct(ctx context.Context, input store.GiveContactsAccessToProductInput) (err error) {

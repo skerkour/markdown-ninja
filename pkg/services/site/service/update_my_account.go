@@ -4,14 +4,14 @@ import (
 	"context"
 	"strings"
 
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/events"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/site"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
 )
 
 func (service *SiteService) UpdateMyAccount(ctx context.Context, input site.UpdateMyAccount) (retContact site.Contact, err error) {

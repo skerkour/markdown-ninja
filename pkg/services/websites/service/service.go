@@ -1,8 +1,6 @@
 package service
 
 import (
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/cmd/mdninja-server/config"
 	"markdown.ninja/pkg/mailer"
 	"markdown.ninja/pkg/services/contacts"
@@ -14,6 +12,8 @@ import (
 	"markdown.ninja/pkg/services/store"
 	"markdown.ninja/pkg/services/websites/repository"
 	"markdown.ninja/pkg/storage"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/queue"
 )
 
 type WebsitesService struct {

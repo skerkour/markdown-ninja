@@ -6,13 +6,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/countries"
-	"github.com/skerkour/stdx-go/crypto"
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/site"
+	"markdown.ninja/stdx/countries"
+	"markdown.ninja/stdx/crypto"
+	"markdown.ninja/stdx/db"
 )
 
 func (service *SiteService) CompleteLogin(ctx context.Context, input site.CompleteLoginInput) (retContact site.Contact, err error) {

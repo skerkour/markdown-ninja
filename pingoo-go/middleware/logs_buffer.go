@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/skerkour/stdx-go/retry"
 	"markdown.ninja/pingoo-go"
+	"markdown.ninja/stdx/retry"
 )
 
 const (

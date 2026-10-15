@@ -4,13 +4,13 @@ import (
 	"context"
 	"slices"
 
-	"github.com/skerkour/stdx-go/iterx"
-	"github.com/skerkour/stdx-go/set"
-	"github.com/skerkour/stdx-go/uuid"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/iterx"
+	"markdown.ninja/stdx/set"
+	"markdown.ninja/stdx/uuid"
 )
 
 func (service *OrganizationsService) ListUserInvitations(ctx context.Context, _ kernel.EmptyInput) (ret kernel.PaginatedResult[organizations.UserInvitation], err error) {

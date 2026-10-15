@@ -5,9 +5,6 @@ import (
 	"net"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/memorycache"
-	"github.com/skerkour/stdx-go/queue"
 	"golang.org/x/sync/singleflight"
 	"markdown.ninja/cmd/mdninja-server/config"
 	"markdown.ninja/pkg/mailer"
@@ -19,6 +16,9 @@ import (
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/memorycache"
+	"markdown.ninja/stdx/queue"
 )
 
 type EmailsService struct {

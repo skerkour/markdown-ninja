@@ -4,13 +4,13 @@ import (
 	"bytes"
 	"strings"
 
-	"github.com/skerkour/stdx-go/yaml"
 	"github.com/yuin/goldmark"
 	gast "github.com/yuin/goldmark/ast"
 	mdparser "github.com/yuin/goldmark/parser"
 	"github.com/yuin/goldmark/text"
 	"github.com/yuin/goldmark/util"
 	"markdown.ninja/pkg/errs"
+	"markdown.ninja/stdx/yaml"
 )
 
 var ErrFrontmatterIsMissing = errs.NotFound("Frontmatter is missing")

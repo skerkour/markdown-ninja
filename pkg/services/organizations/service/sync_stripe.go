@@ -6,13 +6,13 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/log/slogx"
 	"github.com/stripe/stripe-go/v81"
 	stripecustomer "github.com/stripe/stripe-go/v81/customer"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *OrganizationsService) SyncStripe(ctx context.Context, input organizations.SyncStripeInput) (err error) {

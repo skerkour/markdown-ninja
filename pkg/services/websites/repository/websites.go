@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (repo *WebsitesRepository) CreateWebsite(ctx context.Context, db db.Queryer, website websites.Website) (err error) {

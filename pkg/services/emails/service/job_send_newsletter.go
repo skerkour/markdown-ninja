@@ -13,9 +13,6 @@ import (
 
 	"log/slog"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/markdown"
 	"markdown.ninja/pkg/services/contacts"
@@ -23,6 +20,9 @@ import (
 	"markdown.ninja/pkg/services/emails"
 	"markdown.ninja/pkg/services/emails/templates"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
 )
 
 type newsletterRecipient struct {

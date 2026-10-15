@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContentService) InitNewWebsiteData(ctx context.Context, tx db.Queryer, website websites.Website) (err error) {

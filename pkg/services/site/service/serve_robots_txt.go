@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/skerkour/stdx-go/httpx"
 	"markdown.ninja/pkg/server/cachecontrol"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/httpx"
 )
 
 // This robots.txt directive is separate from others as it's always happended to the robots.txt file

@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/useragent"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/services/events"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/useragent"
 )
 
 type getAnonymousIdInput struct {

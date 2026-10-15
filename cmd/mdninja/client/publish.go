@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/skerkour/stdx-go/log/slogx"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 type PublishInput struct {

@@ -6,9 +6,6 @@ import (
 	"text/template"
 
 	"github.com/microcosm-cc/bluemonday"
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/queue"
-	"github.com/skerkour/stdx-go/set"
 	"markdown.ninja/cmd/mdninja-server/config"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/content/repository"
@@ -19,6 +16,9 @@ import (
 	"markdown.ninja/pkg/services/store"
 	"markdown.ninja/pkg/services/websites"
 	"markdown.ninja/pkg/storage"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/queue"
+	"markdown.ninja/stdx/set"
 )
 
 type ContentService struct {

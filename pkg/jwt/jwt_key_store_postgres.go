@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
+	"markdown.ninja/stdx/db"
 )
 
 type keyStorePostgres struct {

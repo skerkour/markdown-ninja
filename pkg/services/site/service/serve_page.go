@@ -11,14 +11,14 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/log/slogx"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/server/cachecontrol"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *SiteService) servePage(ctx context.Context, res http.ResponseWriter, website websites.Website, page content.Page,

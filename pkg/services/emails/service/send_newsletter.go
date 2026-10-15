@@ -4,12 +4,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/emails"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
 )
 
 func (service *EmailsService) SendNewsletter(ctx context.Context, input emails.SendNewsletterInput) (newsletter emails.Newsletter, err error) {

@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/skerkour/stdx-go/uuid"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/errs"
+	"markdown.ninja/stdx/uuid"
 )
 
 type pingooWebhookDataDeleteUser struct {

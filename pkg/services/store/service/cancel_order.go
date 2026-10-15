@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/events"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/db"
 )
 
 func (service *StoreService) CancelOrder(ctx context.Context, input store.CancelOrderInput) error {

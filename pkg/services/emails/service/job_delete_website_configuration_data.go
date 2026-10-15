@@ -6,10 +6,10 @@ import (
 
 	"log/slog"
 
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/retry"
 	"markdown.ninja/pkg/services/emails"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/retry"
 )
 
 func (service *EmailsService) JobDeleteWebsiteConfigurationData(ctx context.Context, input emails.JobDeleteWebsiteConfigurationData) (err error) {

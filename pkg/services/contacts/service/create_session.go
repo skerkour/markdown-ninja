@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContactsService) CreateSession(ctx context.Context, db db.Queryer, input contacts.CreateSessionInput) (session contacts.Session, cookie *http.Cookie, err error) {

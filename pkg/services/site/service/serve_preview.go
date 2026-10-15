@@ -7,13 +7,13 @@ import (
 	"strconv"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/httpx"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/apiutil"
 	"markdown.ninja/pkg/server/cachecontrol"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/httpx"
 )
 
 func (service *SiteService) ServePreview(res http.ResponseWriter, req *http.Request) {

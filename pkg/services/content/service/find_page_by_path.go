@@ -4,9 +4,9 @@ import (
 	"context"
 	"unicode/utf8"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/content"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *ContentService) FindPageByPath(ctx context.Context, db db.Queryer, websiteID guid.GUID, path string) (page content.Page, err error) {

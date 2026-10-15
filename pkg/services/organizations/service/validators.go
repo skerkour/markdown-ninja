@@ -7,12 +7,12 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/skerkour/stdx-go/countries"
-	"github.com/skerkour/stdx-go/money/vat"
-	"github.com/skerkour/stdx-go/retry"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/countries"
+	"markdown.ninja/stdx/money/vat"
+	"markdown.ninja/stdx/retry"
 )
 
 func (service *OrganizationsService) validateOrganizationName(name string) error {

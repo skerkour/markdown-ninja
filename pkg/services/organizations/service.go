@@ -3,11 +3,11 @@ package organizations
 import (
 	"context"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/uuid"
 	"github.com/stripe/stripe-go/v81"
 	"markdown.ninja/pkg/services/kernel"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/uuid"
 )
 
 type Service interface {

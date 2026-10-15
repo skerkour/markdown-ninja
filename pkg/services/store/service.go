@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
 	"github.com/stripe/stripe-go/v81"
 	"markdown.ninja/pkg/services/kernel"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
 )
 
 type Service interface {

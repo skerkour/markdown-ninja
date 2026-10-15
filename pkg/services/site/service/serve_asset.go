@@ -11,10 +11,6 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/memorycache"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/server/cachecontrol"
@@ -22,6 +18,10 @@ import (
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/site"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/memorycache"
 )
 
 func (service *SiteService) serveAsset(ctx context.Context, res http.ResponseWriter, req *http.Request,

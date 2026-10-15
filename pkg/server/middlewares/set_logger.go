@@ -4,8 +4,8 @@ import (
 	"log/slog"
 	"net/http"
 
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/uuid"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/uuid"
 )
 
 // SetLogger injects `logger` in the context of requests

@@ -7,8 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/cmd/mdninja-ebook/pandoc"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 // Generate ebooks from the given configuration file

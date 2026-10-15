@@ -6,9 +6,9 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 // JobSyncUnsubscribedContacts fetches contacts that have been "suppressed" (bounces, spam complaints...) by

@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/skerkour/stdx-go/httpx"
 	"markdown.ninja/pkg/server/cachecontrol"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/httpx"
 )
 
 func (service *SiteService) serveEmptyPage(ctx context.Context, res http.ResponseWriter, website websites.Website, hostname, url string) {

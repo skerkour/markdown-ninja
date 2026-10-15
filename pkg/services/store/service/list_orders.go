@@ -4,10 +4,10 @@ import (
 	"context"
 	"strings"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/guid"
 )
 
 func (service *StoreService) ListOrders(ctx context.Context, input store.ListOrdersInput) (ret kernel.PaginatedResult[store.OrderMetadata], err error) {

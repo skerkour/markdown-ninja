@@ -5,13 +5,13 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/skerkour/stdx-go/crypto"
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/services/contacts"
 	"markdown.ninja/pkg/services/content"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/store"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/crypto"
+	"markdown.ninja/stdx/guid"
 )
 
 const (

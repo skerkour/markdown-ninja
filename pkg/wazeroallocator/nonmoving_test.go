@@ -3,8 +3,8 @@ package wazeroallocator
 import (
 	"testing"
 
-	"github.com/skerkour/stdx-go/testify/require"
 	"github.com/tetratelabs/wazero/experimental"
+	"markdown.ninja/stdx/testify/require"
 )
 
 func TestNonMoving(t *testing.T) {

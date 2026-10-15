@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/stdx-go/log/slogx"
 	"github.com/stripe/stripe-go/v81"
 	"github.com/stripe/stripe-go/v81/checkout/session"
 	stripecustomer "github.com/stripe/stripe-go/v81/customer"
@@ -14,6 +13,7 @@ import (
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *OrganizationsService) UpdateSubscription(ctx context.Context, input organizations.UpdateSubscriptionInput) (ret organizations.UpdateSubscriptionOutput, err error) {

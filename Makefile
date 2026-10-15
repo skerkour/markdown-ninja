@@ -1,4 +1,4 @@
-VERSION := 0.2.9
+VERSION := 0.2.10
 GO_MODULE = $(shell cat go.mod | grep module | cut -d ' ' -f2)
 DIST_DIR = dist
 
@@ -37,14 +37,8 @@ update_deps:
 	go mod tidy
 
 
-.PHONY: update_stdx
-update_stdx:
-	go get -u github.com/skerkour/stdx-go
-	go mod tidy
-	go mod tidy
-
 .PHONY: clean
-clean:
+clean: delete_ds_store
 	rm -rf $(DIST_DIR)
 
 .PHONY: delete_ds_store
@@ -115,7 +109,7 @@ STRIP_CMD = strip --strip-all -xX \
 .PHONY: mdninja
 mdninja:
 	mkdir -p $(DIST_DIR)
-	GOOS=linux CGO_ENABLED=0 go build -o $(DIST_DIR)/$(MDNINJA_BIN) -tags timetzdata \
+	GOEXPERIMENT=simd GOOS=linux CGO_ENABLED=0 go build -o $(DIST_DIR)/$(MDNINJA_BIN) -tags timetzdata \
 		-trimpath -a -ldflags "-B none -extldflags -static -w -s -X $(GO_MODULE)/pkg/buildinfo.Version=$(VERSION)" \
 		./cmd/mdninja
 	$(STRIP_CMD) $(DIST_DIR)/$(MDNINJA_BIN)
@@ -133,7 +127,7 @@ MDNINJA_SERVER_BIN = mdninja-server
 .PHONY: mdninja-server
 mdninja-server:
 	mkdir -p $(DIST_DIR)
-	GOAMD64=v3 GOOS=linux CGO_ENABLED=0 go build -o $(DIST_DIR)/$(MDNINJA_SERVER_BIN) -tags timetzdata \
+	GOEXPERIMENT=simd GOAMD64=v3 GOOS=linux CGO_ENABLED=0 go build -o $(DIST_DIR)/$(MDNINJA_SERVER_BIN) -tags timetzdata \
 		-trimpath -a -ldflags "-B none -extldflags -static -w -s -X $(GO_MODULE)/pkg/buildinfo.Version=$(VERSION)" \
 		./cmd/mdninja-server
 	$(STRIP_CMD) $(DIST_DIR)/$(MDNINJA_SERVER_BIN)
@@ -146,7 +140,7 @@ dev:
 
 .PHONY: build_server_dev
 build_server_dev:
-	go build -o $(DIST_DIR)/$(MDNINJA_SERVER_BIN) -ldflags "-B none -extldflags -w -s -X $(GO_MODULE)/pkg/buildinfo.Version=$(VERSION)" \
+	GOEXPERIMENT=simd go build -o $(DIST_DIR)/$(MDNINJA_SERVER_BIN) -ldflags "-B none -extldflags -w -s -X $(GO_MODULE)/pkg/buildinfo.Version=$(VERSION)" \
 		./cmd/mdninja-server
 
 
@@ -159,7 +153,7 @@ MDNINJA_EBOOK_BIN = mdninja-ebook
 .PHONY: mdninja-ebook
 mdninja-ebook:
 	mkdir -p $(DIST_DIR)
-	GOOS=linux CGO_ENABLED=0 go build -o $(DIST_DIR)/$(MDNINJA_EBOOK_BIN) -trimpath -a -ldflags "-extldflags -static -w -s \
+	GOEXPERIMENT=simd GOOS=linux CGO_ENABLED=0 go build -o $(DIST_DIR)/$(MDNINJA_EBOOK_BIN) -trimpath -a -ldflags "-extldflags -static -w -s \
 		-X $(GO_MODULE)/pkg/buildinfo.Version=$(VERSION)" \
 		./cmd/mdninja-ebook
 	$(STRIP_CMD) $(DIST_DIR)/$(MDNINJA_EBOOK_BIN)

@@ -8,15 +8,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/skerkour/stdx-go/ahocorasick"
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/services/events"
 	"markdown.ninja/pkg/services/events/repository"
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/websites"
 	"markdown.ninja/pkg/settings"
+	"markdown.ninja/stdx/ahocorasick"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
 )
 
 type Service struct {

@@ -10,9 +10,6 @@ import (
 	"time"
 
 	"github.com/klauspost/compress/zstd"
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/memorycache"
-	"github.com/skerkour/stdx-go/queue"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/cmd/mdninja-server/config"
 	"markdown.ninja/pkg/mailer"
@@ -26,6 +23,9 @@ import (
 	"markdown.ninja/pkg/services/site/templates"
 	"markdown.ninja/pkg/services/store"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/memorycache"
+	"markdown.ninja/stdx/queue"
 	themespkg "markdown.ninja/themes"
 )
 

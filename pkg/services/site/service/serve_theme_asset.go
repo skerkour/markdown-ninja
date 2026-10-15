@@ -10,11 +10,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/skerkour/stdx-go/httpx"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/server/cachecontrol"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/httpx"
 )
 
 func (service *SiteService) serveThemeAsset(ctx context.Context, res http.ResponseWriter, website websites.Website, domain, assetUrl string) {

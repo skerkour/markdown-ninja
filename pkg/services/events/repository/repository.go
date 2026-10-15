@@ -3,7 +3,7 @@ package repository
 import (
 	"time"
 
-	"github.com/skerkour/stdx-go/memorycache"
+	"markdown.ninja/stdx/memorycache"
 )
 
 type EventsRepository struct {

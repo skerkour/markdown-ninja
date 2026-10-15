@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/skerkour/stdx-go/crypto"
-	"github.com/skerkour/stdx-go/db"
 	"markdown.ninja/pkg/server/httpctx"
 	"markdown.ninja/pkg/services/organizations"
+	"markdown.ninja/stdx/crypto"
+	"markdown.ninja/stdx/db"
 )
 
 func (service *OrganizationsService) AcceptStaffInvitation(ctx context.Context, input organizations.AcceptStaffInvitationInput) (err error) {

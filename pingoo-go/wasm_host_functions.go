@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/retry"
+	"markdown.ninja/stdx/retry"
 )
 
 func (client *Client) resolveHostForIp(ctx context.Context, ip string) (string, error) {

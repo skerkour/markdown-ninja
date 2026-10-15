@@ -8,12 +8,12 @@ import (
 	"log/slog"
 	"net/mail"
 
-	"github.com/skerkour/stdx-go/email"
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/events"
 	"markdown.ninja/pkg/services/site"
 	"markdown.ninja/pkg/services/site/templates"
+	"markdown.ninja/stdx/email"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *SiteService) JobSendLoginEmail(ctx context.Context, input site.JobSendLoginEmail) (err error) {

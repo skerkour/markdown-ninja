@@ -10,15 +10,15 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/guid"
-	"github.com/skerkour/stdx-go/httpx"
-	"github.com/skerkour/stdx-go/imaging"
-	"github.com/skerkour/stdx-go/retry"
 	"github.com/zeebo/blake3"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/websites"
 	"markdown.ninja/pkg/storage"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/guid"
+	"markdown.ninja/stdx/httpx"
+	"markdown.ninja/stdx/imaging"
+	"markdown.ninja/stdx/retry"
 )
 
 func (service *WebsitesService) UpdateWebsiteIcon(ctx context.Context, input websites.UpdateWebsiteIconInput) (err error) {

@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/skerkour/stdx-go/schema"
 	"markdown.ninja/pkg/errs"
+	"markdown.ninja/stdx/schema"
 )
 
 func JsonEndpoint[I any, O any](fn func(context.Context, I) (O, error)) func(http.ResponseWriter, *http.Request) {

@@ -6,7 +6,7 @@ import (
 	"net/netip"
 	"time"
 
-	"github.com/skerkour/stdx-go/uuid"
+	"markdown.ninja/stdx/uuid"
 )
 
 type HttpLogRecord struct {

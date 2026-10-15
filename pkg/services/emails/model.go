@@ -3,9 +3,9 @@ package emails
 import (
 	"time"
 
-	"github.com/skerkour/stdx-go/guid"
 	"markdown.ninja/pkg/mailer"
 	"markdown.ninja/pkg/services/kernel"
+	"markdown.ninja/stdx/guid"
 )
 
 const (

@@ -4,9 +4,9 @@ import (
 	"context"
 	"strings"
 
-	"github.com/skerkour/stdx-go/log/slogx"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/services/contacts"
+	"markdown.ninja/stdx/log/slogx"
 )
 
 func (service *ContactsService) ExportContactsForProduct(ctx context.Context, input contacts.ExportContactsForProductInput) (res contacts.ExportContactsForProductOutput, err error) {

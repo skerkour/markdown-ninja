@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/skerkour/stdx-go/retry"
 	"markdown.ninja/pingoo-go/wasm"
 	"markdown.ninja/pkg/jwt"
+	"markdown.ninja/stdx/retry"
 )
 
 type verifyJwtInput struct {

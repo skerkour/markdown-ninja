@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/skerkour/stdx-go/retry"
 	"github.com/stripe/stripe-go/v81"
 	striperefund "github.com/stripe/stripe-go/v81/refund"
 	"markdown.ninja/pkg/services/store"
+	"markdown.ninja/stdx/retry"
 )
 
 func (service *StoreService) JobCreateStripeRefund(ctx context.Context, input store.JobCreateStripeRefund) (err error) {

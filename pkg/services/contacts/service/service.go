@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"html/template"
 
-	"github.com/skerkour/stdx-go/db"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/cmd/mdninja-server/config"
 	"markdown.ninja/pingoo-go"
 	"markdown.ninja/pkg/jwt"
@@ -17,6 +15,8 @@ import (
 	"markdown.ninja/pkg/services/kernel"
 	"markdown.ninja/pkg/services/store"
 	"markdown.ninja/pkg/services/websites"
+	"markdown.ninja/stdx/db"
+	"markdown.ninja/stdx/queue"
 )
 
 type ContactsService struct {

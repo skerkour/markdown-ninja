@@ -18,11 +18,11 @@ import (
 
 	"log/slog"
 
-	"github.com/skerkour/stdx-go/jsonutil"
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/yaml"
 	"markdown.ninja/pkg/errs"
 	"markdown.ninja/pkg/kms"
+	"markdown.ninja/stdx/jsonutil"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/yaml"
 )
 
 type Config struct {

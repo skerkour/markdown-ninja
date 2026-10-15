@@ -6,9 +6,9 @@ import (
 
 	"log/slog"
 
-	"github.com/skerkour/stdx-go/log/slogx"
-	"github.com/skerkour/stdx-go/queue"
 	"markdown.ninja/pkg/services/emails"
+	"markdown.ninja/stdx/log/slogx"
+	"markdown.ninja/stdx/queue"
 )
 
 func (service *EmailsService) TaskSendScheduledNewsletters(ctx context.Context) {
