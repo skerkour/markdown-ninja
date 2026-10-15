@@ -19,7 +19,7 @@ install:
 .PHONY: install_ci
 install_ci:
 	npm config set ignore-scripts true
-	npm ci --no-scripts --ignore-scripts
+	npm ci --ignore-scripts
 
 .PHONY: dev
 dev:
