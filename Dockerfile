@@ -105,6 +105,8 @@ ENV LC_ALL="en_US.UTF-8"
 ENV LANG="en_US.UTF-8"
 ENV LANGUAGE="en_US:en"
 
+RUN apt update && apt upgrade -y
+
 # /etc/nsswitch.conf may be used by some DNS resolvers
 # /etc/mime.types may be used to detect the MIME type of files
 COPY --from=builder_files --chmod=444 \
