@@ -146,6 +146,7 @@ var rootCmd = &cobra.Command{
 				dialer := net.Dialer{
 					Timeout: 3 * time.Second,
 				}
+				dialer.SetMultipathTCP(false)
 				dnsServer := "1.1.1.1"
 				return dialer.DialContext(ctx, network, dnsServer)
 			},

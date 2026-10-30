@@ -68,5 +68,6 @@ func DialTimeout(network, laddr, raddr string, timeout time.Duration) (net.Conn,
 		LocalAddr: nla,
 		Timeout:   timeout,
 	}
+	d.SetMultipathTCP(false)
 	return d.Dial(network, raddr)
 }

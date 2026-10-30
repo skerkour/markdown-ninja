@@ -27,11 +27,13 @@ type Client struct {
 
 // TODO: wrap errors with errs
 func NewClient(markdownNinjaUrl, apiKey string) (client *Client, err error) {
+	dialer := net.Dialer{
+		Timeout:   10 * time.Second,
+		KeepAlive: 60 * time.Second,
+	}
+	dialer.SetMultipathTCP(false)
 	transport := &http.Transport{
-		DialContext: (&net.Dialer{
-			Timeout:   10 * time.Second,
-			KeepAlive: 60 * time.Second,
-		}).DialContext,
+		DialContext:           dialer.DialContext,
 		IdleConnTimeout:       90 * time.Second,
 		TLSHandshakeTimeout:   10 * time.Second,
 		ExpectContinueTimeout: 1 * time.Second,

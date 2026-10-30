@@ -106,6 +106,7 @@ func NewClient(ctx context.Context, apiKey string, projectID string, config *Cli
 			dialer := net.Dialer{
 				Timeout: 5 * time.Second,
 			}
+			dialer.SetMultipathTCP(false)
 			dnsServer := dnsServers[rand.IntN(len(dnsServers))]
 			return dialer.DialContext(ctx, network, dnsServer)
 		},

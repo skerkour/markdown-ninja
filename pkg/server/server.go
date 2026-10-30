@@ -235,7 +235,9 @@ func (server *server) run(ctx context.Context) (err error) {
 	}
 
 	logger.Info("server: Starting HTTP server", slog.String("address", httpServer.Addr), slog.Bool("tls", server.httpConfig.Tls))
-	httpServerListener, err := net.Listen("tcp", httpServer.Addr)
+	httpServerListenerConfig := net.ListenConfig{}
+	httpServerListenerConfig.SetMultipathTCP(false)
+	httpServerListener, err := httpServerListenerConfig.Listen(ctx, "tcp", httpServer.Addr)
 	if err != nil {
 		return fmt.Errorf("server: error listening on port [%s]: %w", portStr, err)
 	}

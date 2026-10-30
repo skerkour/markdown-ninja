@@ -44,14 +44,16 @@ func NewSesMailer(config Config) (*SesMailer, error) {
 	} else {
 		// optimized HTTP client for SES.
 		// https://aws.github.io/aws-sdk-go-v2/docs/configuring-sdk/custom-http/
+		dialer := net.Dialer{
+			Timeout: 10 * time.Second,
+			// KeepAlive: 15 * time.Second,
+			// KeepAliveConfig: net.KeepAliveConfig{
+			// 	Enable: true,
+			// },
+		}
+		dialer.SetMultipathTCP(false)
 		transport := &http.Transport{
-			DialContext: (&net.Dialer{
-				Timeout: 10 * time.Second,
-				// KeepAlive: 15 * time.Second,
-				// KeepAliveConfig: net.KeepAliveConfig{
-				// 	Enable: true,
-				// },
-			}).DialContext,
+			DialContext:         dialer.DialContext,
 			TLSHandshakeTimeout: 10 * time.Second,
 			// ResponseHeaderTimeout: 10,
 			ExpectContinueTimeout: 5 * time.Second,
