@@ -1,4 +1,4 @@
-VERSION := 0.2.17
+VERSION := 0.2.18
 GO_MODULE = $(shell cat go.mod | grep module | cut -d ' ' -f2)
 DIST_DIR = dist
 
